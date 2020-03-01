@@ -1,0 +1,10 @@
+/home/hgj/Project/cuda/cuda_by_example/build/CMakeFiles/rebuild_cache.dir
+/home/hgj/Project/cuda/cuda_by_example/build/CMakeFiles/edit_cache.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/rebuild_cache.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/enum_gpu.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/edit_cache.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/hello_world.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_device_call.dir
+/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir

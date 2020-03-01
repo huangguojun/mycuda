@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/set_gpu.dir/set_gpu_generated_set_gpu.cu.o  -o ../bin/set_gpu -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -lpthread -ldl -lrt 

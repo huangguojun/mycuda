@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o  -o ../bin/simple_kernel_params -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -lpthread -ldl -lrt 
