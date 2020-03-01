@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/set_gpu.dir/set_gpu_generated_set_gpu.cu.o"
-  "../bin/set_gpu.pdb"
   "../bin/set_gpu"
+  "../bin/set_gpu.pdb"
+  "CMakeFiles/set_gpu.dir/set_gpu_generated_set_gpu.cu.o"
 )
 
 # Per-language clean rules from dependency scanning.

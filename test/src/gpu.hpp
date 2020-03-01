@@ -1,1 +1,2 @@
 void printCudaVersion();
+void SimpleDeviceCall();

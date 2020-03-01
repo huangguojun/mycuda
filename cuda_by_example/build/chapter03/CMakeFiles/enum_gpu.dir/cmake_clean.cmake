@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/enum_gpu.dir/enum_gpu_generated_enum_gpu.cu.o"
-  "../bin/enum_gpu.pdb"
   "../bin/enum_gpu"
+  "../bin/enum_gpu.pdb"
+  "CMakeFiles/enum_gpu.dir/enum_gpu_generated_enum_gpu.cu.o"
 )
 
 # Per-language clean rules from dependency scanning.

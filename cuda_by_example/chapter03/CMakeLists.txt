@@ -4,7 +4,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 CUDA_ADD_EXECUTABLE(enum_gpu enum_gpu.cu )
 #SET_PROPERTY(TARGET enum_gpu  PROPERTY FOLDER chapter03)
 
-CUDA_ADD_EXECUTABLE(hello_world hello_world.cu)
+#CUDA_ADD_EXECUTABLE(hello_world hello_world.cu)
 #SET_PROPERTY(TARGET hello_world  PROPERTY FOLDER chapter03)
 
 CUDA_ADD_EXECUTABLE(set_gpu set_gpu.cu)

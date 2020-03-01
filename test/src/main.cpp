@@ -10,9 +10,8 @@ int main()
 
 #ifdef USE_CUDA
     std::cout << "CUDA: On" << std::endl;
-    printCudaVersion();
-#else
-    std::cout << "CUDA: Off" << std::endl;
+    //printCudaVersion();
+    SimpleDeviceCall();
 #endif
 
     return 0;

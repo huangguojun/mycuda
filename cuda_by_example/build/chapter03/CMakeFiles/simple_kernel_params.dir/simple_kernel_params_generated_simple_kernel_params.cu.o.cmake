@@ -50,24 +50,26 @@
 # generated_cubin_file:STRING=<> File to generate.  This argument must be passed
 #                                                   in if build_cubin is true.
 
+cmake_policy(PUSH)
+cmake_policy(SET CMP0007 NEW)
 if(NOT generated_file)
   message(FATAL_ERROR "You must specify generated_file on the command line")
 endif()
 
 # Set these up as variables to make reading the generated file easier
-set(CMAKE_COMMAND "/home/hgj/Support/cmake-3.8.2-Linux-x86_64/bin/cmake") # path
-set(source_file "/home/hgj/Project/cuda/cuda_by_example/chapter03/simple_kernel_params.cu") # path
-set(NVCC_generated_dependency_file "/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//simple_kernel_params_generated_simple_kernel_params.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//simple_kernel_params_generated_simple_kernel_params.cu.o.depend") # path
-set(CUDA_make2cmake "/home/hgj/Support/cmake-3.8.2-Linux-x86_64/share/cmake-3.8/Modules/FindCUDA/make2cmake.cmake") # path
-set(CUDA_parse_cubin "/home/hgj/Support/cmake-3.8.2-Linux-x86_64/share/cmake-3.8/Modules/FindCUDA/parse_cubin.cmake") # path
+set(CMAKE_COMMAND "/usr/local/bin/cmake") # path
+set(source_file "/home/hgj/Project/mycuda/cuda_by_example/chapter03/simple_kernel_params.cu") # path
+set(NVCC_generated_dependency_file "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//simple_kernel_params_generated_simple_kernel_params.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//simple_kernel_params_generated_simple_kernel_params.cu.o.depend") # path
+set(CUDA_make2cmake "/usr/local/share/cmake-3.16/Modules/FindCUDA/make2cmake.cmake") # path
+set(CUDA_parse_cubin "/usr/local/share/cmake-3.16/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//.") # path
-set(generated_file_internal "/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o") # path
-set(generated_cubin_file_internal "/home/hgj/Project/cuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o.cubin.txt") # path
+set(generated_file_path "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//.") # path
+set(generated_file_internal "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o") # path
+set(generated_cubin_file_internal "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS  ;; ) # list
@@ -77,8 +79,9 @@ set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELEASE  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64) # list
-set(CUDA_NVCC_INCLUDE_DIRS "/usr/include;/usr/include/opencv;/usr/include;/usr/include/opencv;/usr/include") # list (needs to be in quotes to handle spaces properly).
-set(CUDA_NVCC_COMPILE_DEFINITIONS "") # list (needs to be in quotes to handle spaces properly).
+set(CUDA_NVCC_INCLUDE_DIRS [==[/usr/include;/usr/include;/usr/include/opencv]==]) # list (needs to be in lua quotes to address backslashes)
+string(REPLACE "\\" "/" CUDA_NVCC_INCLUDE_DIRS "${CUDA_NVCC_INCLUDE_DIRS}")
+set(CUDA_NVCC_COMPILE_DEFINITIONS [==[]==]) # list (needs to be in lua quotes see #16510 ).
 set(format_flag "-c") # string
 set(cuda_language_flag ) # list
 
@@ -131,7 +134,7 @@ list(APPEND CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS_${build_configuration}})
 list( FIND CUDA_NVCC_FLAGS "-ccbin" ccbin_found0 )
 list( FIND CUDA_NVCC_FLAGS "--compiler-bindir" ccbin_found1 )
 if( ccbin_found0 LESS 0 AND ccbin_found1 LESS 0 AND CUDA_HOST_COMPILER )
-  if (CUDA_HOST_COMPILER STREQUAL "$(VCInstallDir)bin" AND DEFINED CCBIN)
+  if (CUDA_HOST_COMPILER STREQUAL "" AND DEFINED CCBIN)
     set(CCBIN -ccbin "${CCBIN}")
   else()
     set(CCBIN -ccbin "${CUDA_HOST_COMPILER}")
@@ -185,20 +188,15 @@ cuda_execute_process(
 # For CUDA 2.3 and below, -G -M doesn't work, so remove the -G flag
 # for dependency generation and hope for the best.
 set(depends_CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}")
-set(CUDA_VERSION 7.5)
+set(CUDA_VERSION 9.1)
 if(CUDA_VERSION VERSION_LESS "3.0")
-  cmake_policy(PUSH)
-  # CMake policy 0007 NEW states that empty list elements are not
-  # ignored.  I'm just setting it to avoid the warning that's printed.
-  cmake_policy(SET CMP0007 NEW)
-  # Note that this will remove all occurances of -G.
+  # Note that this will remove all occurrences of -G.
   list(REMOVE_ITEM depends_CUDA_NVCC_FLAGS "-G")
-  cmake_policy(POP)
 endif()
 
 # nvcc doesn't define __CUDACC__ for some reason when generating dependency files.  This
 # can cause incorrect dependencies when #including files based on this macro which is
-# defined in the generating passes of nvcc invokation.  We will go ahead and manually
+# defined in the generating passes of nvcc invocation.  We will go ahead and manually
 # define this for now until a future version fixes this bug.
 set(CUDACC_DEFINE -D__CUDACC__)
 
@@ -312,3 +310,5 @@ if( build_cubin )
     )
 
 endif()
+
+cmake_policy(POP)
