@@ -16,7 +16,8 @@
 
 #include "../common/book.h"
 
-int main( void ) {
+int main( void ) 
+{
     cudaDeviceProp  prop;
 
     int count;

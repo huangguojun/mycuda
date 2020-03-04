@@ -10,8 +10,9 @@ int main()
 
 #ifdef USE_CUDA
     std::cout << "CUDA: On" << std::endl;
-    //printCudaVersion();
-    SimpleDeviceCall();
+   // printCudaVersion();
+   // SimpleDeviceCall();
+   EnumGPU();
 #endif
 
     return 0;
