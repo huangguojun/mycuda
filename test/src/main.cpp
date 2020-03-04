@@ -12,7 +12,8 @@ int main()
     std::cout << "CUDA: On" << std::endl;
    // printCudaVersion();
    // SimpleDeviceCall();
-   EnumGPU();
+   //EnumGPU();
+   JuliaGPU();
 #endif
 
     return 0;
