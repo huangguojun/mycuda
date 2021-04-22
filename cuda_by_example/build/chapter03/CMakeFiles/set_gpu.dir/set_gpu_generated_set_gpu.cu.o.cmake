@@ -58,18 +58,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/local/bin/cmake") # path
-set(source_file "/home/hgj/Project/mycuda/cuda_by_example/chapter03/set_gpu.cu") # path
-set(NVCC_generated_dependency_file "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//set_gpu_generated_set_gpu.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//set_gpu_generated_set_gpu.cu.o.depend") # path
+set(source_file "/home/hgj/Project/mypro/mycuda/cuda_by_example/chapter03/set_gpu.cu") # path
+set(NVCC_generated_dependency_file "/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//set_gpu_generated_set_gpu.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//set_gpu_generated_set_gpu.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/local/share/cmake-3.16/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/local/share/cmake-3.16/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//.") # path
-set(generated_file_internal "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//./set_gpu_generated_set_gpu.cu.o") # path
-set(generated_cubin_file_internal "/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//./set_gpu_generated_set_gpu.cu.o.cubin.txt") # path
+set(generated_file_path "/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//.") # path
+set(generated_file_internal "/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//./set_gpu_generated_set_gpu.cu.o") # path
+set(generated_cubin_file_internal "/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/set_gpu.dir//./set_gpu_generated_set_gpu.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS  ;; ) # list

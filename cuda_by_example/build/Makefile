@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hgj/Project/mycuda/cuda_by_example
+CMAKE_SOURCE_DIR = /home/hgj/Project/mypro/mycuda/cuda_by_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hgj/Project/mycuda/cuda_by_example/build
+CMAKE_BINARY_DIR = /home/hgj/Project/mypro/mycuda/cuda_by_example/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles /home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles /home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -175,6 +175,136 @@ simple_kernel/fast:
 	$(MAKE) -f chapter03/CMakeFiles/simple_kernel.dir/build.make chapter03/CMakeFiles/simple_kernel.dir/build
 .PHONY : simple_kernel/fast
 
+#=============================================================================
+# Target rules for targets named add_loop_gpu
+
+# Build rule for target.
+add_loop_gpu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_loop_gpu
+.PHONY : add_loop_gpu
+
+# fast build rule for target.
+add_loop_gpu/fast:
+	$(MAKE) -f chapter04/CMakeFiles/add_loop_gpu.dir/build.make chapter04/CMakeFiles/add_loop_gpu.dir/build
+.PHONY : add_loop_gpu/fast
+
+#=============================================================================
+# Target rules for targets named add_loop_long
+
+# Build rule for target.
+add_loop_long: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_loop_long
+.PHONY : add_loop_long
+
+# fast build rule for target.
+add_loop_long/fast:
+	$(MAKE) -f chapter04/CMakeFiles/add_loop_long.dir/build.make chapter04/CMakeFiles/add_loop_long.dir/build
+.PHONY : add_loop_long/fast
+
+#=============================================================================
+# Target rules for targets named add_loop_cpu
+
+# Build rule for target.
+add_loop_cpu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_loop_cpu
+.PHONY : add_loop_cpu
+
+# fast build rule for target.
+add_loop_cpu/fast:
+	$(MAKE) -f chapter04/CMakeFiles/add_loop_cpu.dir/build.make chapter04/CMakeFiles/add_loop_cpu.dir/build
+.PHONY : add_loop_cpu/fast
+
+#=============================================================================
+# Target rules for targets named julia_cpu
+
+# Build rule for target.
+julia_cpu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 julia_cpu
+.PHONY : julia_cpu
+
+# fast build rule for target.
+julia_cpu/fast:
+	$(MAKE) -f chapter04/CMakeFiles/julia_cpu.dir/build.make chapter04/CMakeFiles/julia_cpu.dir/build
+.PHONY : julia_cpu/fast
+
+#=============================================================================
+# Target rules for targets named julia_gpu
+
+# Build rule for target.
+julia_gpu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 julia_gpu
+.PHONY : julia_gpu
+
+# fast build rule for target.
+julia_gpu/fast:
+	$(MAKE) -f chapter04/CMakeFiles/julia_gpu.dir/build.make chapter04/CMakeFiles/julia_gpu.dir/build
+.PHONY : julia_gpu/fast
+
+#=============================================================================
+# Target rules for targets named dot_5
+
+# Build rule for target.
+dot_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dot_5
+.PHONY : dot_5
+
+# fast build rule for target.
+dot_5/fast:
+	$(MAKE) -f chapter05/CMakeFiles/dot_5.dir/build.make chapter05/CMakeFiles/dot_5.dir/build
+.PHONY : dot_5/fast
+
+#=============================================================================
+# Target rules for targets named add_loop_long_blocks
+
+# Build rule for target.
+add_loop_long_blocks: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_loop_long_blocks
+.PHONY : add_loop_long_blocks
+
+# fast build rule for target.
+add_loop_long_blocks/fast:
+	$(MAKE) -f chapter05/CMakeFiles/add_loop_long_blocks.dir/build.make chapter05/CMakeFiles/add_loop_long_blocks.dir/build
+.PHONY : add_loop_long_blocks/fast
+
+#=============================================================================
+# Target rules for targets named shared_bitmap
+
+# Build rule for target.
+shared_bitmap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shared_bitmap
+.PHONY : shared_bitmap
+
+# fast build rule for target.
+shared_bitmap/fast:
+	$(MAKE) -f chapter05/CMakeFiles/shared_bitmap.dir/build.make chapter05/CMakeFiles/shared_bitmap.dir/build
+.PHONY : shared_bitmap/fast
+
+#=============================================================================
+# Target rules for targets named add_loop_blocks
+
+# Build rule for target.
+add_loop_blocks: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_loop_blocks
+.PHONY : add_loop_blocks
+
+# fast build rule for target.
+add_loop_blocks/fast:
+	$(MAKE) -f chapter05/CMakeFiles/add_loop_blocks.dir/build.make chapter05/CMakeFiles/add_loop_blocks.dir/build
+.PHONY : add_loop_blocks/fast
+
+#=============================================================================
+# Target rules for targets named ripple_5
+
+# Build rule for target.
+ripple_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ripple_5
+.PHONY : ripple_5
+
+# fast build rule for target.
+ripple_5/fast:
+	$(MAKE) -f chapter05/CMakeFiles/ripple_5.dir/build.make chapter05/CMakeFiles/ripple_5.dir/build
+.PHONY : ripple_5/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -188,6 +318,16 @@ help:
 	@echo "... simple_device_call"
 	@echo "... simple_kernel_params"
 	@echo "... simple_kernel"
+	@echo "... add_loop_gpu"
+	@echo "... add_loop_long"
+	@echo "... add_loop_cpu"
+	@echo "... julia_cpu"
+	@echo "... julia_gpu"
+	@echo "... dot_5"
+	@echo "... add_loop_long_blocks"
+	@echo "... shared_bitmap"
+	@echo "... add_loop_blocks"
+	@echo "... ripple_5"
 .PHONY : help
 
 

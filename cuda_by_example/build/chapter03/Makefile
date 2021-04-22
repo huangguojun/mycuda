@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hgj/Project/mycuda/cuda_by_example
+CMAKE_SOURCE_DIR = /home/hgj/Project/mypro/mycuda/cuda_by_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hgj/Project/mycuda/cuda_by_example/build
+CMAKE_BINARY_DIR = /home/hgj/Project/mypro/mycuda/cuda_by_example/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles /home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/progress.marks
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles 0
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/progress.marks
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/clean
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/preinstall
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/preinstall
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chapter03/CMakeFiles/set_gpu.dir/rule:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/set_gpu.dir/rule
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/set_gpu.dir/rule
 .PHONY : chapter03/CMakeFiles/set_gpu.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ set_gpu: chapter03/CMakeFiles/set_gpu.dir/rule
 
 # fast build rule for target.
 set_gpu/fast:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/set_gpu.dir/build.make chapter03/CMakeFiles/set_gpu.dir/build
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/set_gpu.dir/build.make chapter03/CMakeFiles/set_gpu.dir/build
 .PHONY : set_gpu/fast
 
 # Convenience name for target.
 chapter03/CMakeFiles/enum_gpu.dir/rule:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/enum_gpu.dir/rule
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/enum_gpu.dir/rule
 .PHONY : chapter03/CMakeFiles/enum_gpu.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ enum_gpu: chapter03/CMakeFiles/enum_gpu.dir/rule
 
 # fast build rule for target.
 enum_gpu/fast:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/enum_gpu.dir/build.make chapter03/CMakeFiles/enum_gpu.dir/build
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/enum_gpu.dir/build.make chapter03/CMakeFiles/enum_gpu.dir/build
 .PHONY : enum_gpu/fast
 
 # Convenience name for target.
 chapter03/CMakeFiles/simple_device_call.dir/rule:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/simple_device_call.dir/rule
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/simple_device_call.dir/rule
 .PHONY : chapter03/CMakeFiles/simple_device_call.dir/rule
 
 # Convenience name for target.
@@ -152,12 +152,12 @@ simple_device_call: chapter03/CMakeFiles/simple_device_call.dir/rule
 
 # fast build rule for target.
 simple_device_call/fast:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/simple_device_call.dir/build.make chapter03/CMakeFiles/simple_device_call.dir/build
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/simple_device_call.dir/build.make chapter03/CMakeFiles/simple_device_call.dir/build
 .PHONY : simple_device_call/fast
 
 # Convenience name for target.
 chapter03/CMakeFiles/simple_kernel_params.dir/rule:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/simple_kernel_params.dir/rule
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/simple_kernel_params.dir/rule
 .PHONY : chapter03/CMakeFiles/simple_kernel_params.dir/rule
 
 # Convenience name for target.
@@ -167,12 +167,12 @@ simple_kernel_params: chapter03/CMakeFiles/simple_kernel_params.dir/rule
 
 # fast build rule for target.
 simple_kernel_params/fast:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/simple_kernel_params.dir/build.make chapter03/CMakeFiles/simple_kernel_params.dir/build
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/simple_kernel_params.dir/build.make chapter03/CMakeFiles/simple_kernel_params.dir/build
 .PHONY : simple_kernel_params/fast
 
 # Convenience name for target.
 chapter03/CMakeFiles/simple_kernel.dir/rule:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/simple_kernel.dir/rule
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f CMakeFiles/Makefile2 chapter03/CMakeFiles/simple_kernel.dir/rule
 .PHONY : chapter03/CMakeFiles/simple_kernel.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ simple_kernel: chapter03/CMakeFiles/simple_kernel.dir/rule
 
 # fast build rule for target.
 simple_kernel/fast:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/simple_kernel.dir/build.make chapter03/CMakeFiles/simple_kernel.dir/build
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(MAKE) -f chapter03/CMakeFiles/simple_kernel.dir/build.make chapter03/CMakeFiles/simple_kernel.dir/build
 .PHONY : simple_kernel/fast
 
 # Help Target
@@ -209,6 +209,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

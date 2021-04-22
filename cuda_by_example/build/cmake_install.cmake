@@ -1,4 +1,4 @@
-# Install script for directory: /home/hgj/Project/mycuda/cuda_by_example
+# Install script for directory: /home/hgj/Project/mypro/mycuda/cuda_by_example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/cmake_install.cmake")
+  include("/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/cmake_install.cmake")
+  include("/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter04/cmake_install.cmake")
+  include("/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter05/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hgj/Project/mycuda/cuda_by_example/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hgj/Project/mypro/mycuda/cuda_by_example/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

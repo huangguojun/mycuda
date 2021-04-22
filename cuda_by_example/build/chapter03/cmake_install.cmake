@@ -1,4 +1,4 @@
-# Install script for directory: /home/hgj/Project/mycuda/cuda_by_example/chapter03
+# Install script for directory: /home/hgj/Project/mypro/mycuda/cuda_by_example/chapter03
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

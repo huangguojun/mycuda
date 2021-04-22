@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hgj/Project/mycuda/cuda_by_example
+CMAKE_SOURCE_DIR = /home/hgj/Project/mypro/mycuda/cuda_by_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hgj/Project/mycuda/cuda_by_example/build
+CMAKE_BINARY_DIR = /home/hgj/Project/mypro/mycuda/cuda_by_example/build
 
 # Include any dependencies generated for this target.
 include chapter03/CMakeFiles/simple_kernel_params.dir/depend.make
@@ -60,24 +60,24 @@ include chapter03/CMakeFiles/simple_kernel_params.dir/flags.make
 chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o: chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o.depend
 chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o: chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o.cmake
 chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o: ../chapter03/simple_kernel_params.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o"
-	cd /home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir && /usr/local/bin/cmake -E make_directory /home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//.
-	cd /home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o -D generated_cubin_file:STRING=/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o.cubin.txt -P /home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//simple_kernel_params_generated_simple_kernel_params.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o"
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir && /usr/local/bin/cmake -E make_directory /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//.
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o -D generated_cubin_file:STRING=/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//./simple_kernel_params_generated_simple_kernel_params.cu.o.cubin.txt -P /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir//simple_kernel_params_generated_simple_kernel_params.cu.o.cmake
 
 # Object files for target simple_kernel_params
 simple_kernel_params_OBJECTS =
 
 # External object files for target simple_kernel_params
 simple_kernel_params_EXTERNAL_OBJECTS = \
-"/home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o"
+"/home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o"
 
 bin/simple_kernel_params: chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o
 bin/simple_kernel_params: chapter03/CMakeFiles/simple_kernel_params.dir/build.make
 bin/simple_kernel_params: /usr/lib/x86_64-linux-gnu/libcudart_static.a
 bin/simple_kernel_params: /usr/lib/x86_64-linux-gnu/librt.so
 bin/simple_kernel_params: chapter03/CMakeFiles/simple_kernel_params.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hgj/Project/mycuda/cuda_by_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/simple_kernel_params"
-	cd /home/hgj/Project/mycuda/cuda_by_example/build/chapter03 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_kernel_params.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hgj/Project/mypro/mycuda/cuda_by_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/simple_kernel_params"
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_kernel_params.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 chapter03/CMakeFiles/simple_kernel_params.dir/build: bin/simple_kernel_params
@@ -85,10 +85,10 @@ chapter03/CMakeFiles/simple_kernel_params.dir/build: bin/simple_kernel_params
 .PHONY : chapter03/CMakeFiles/simple_kernel_params.dir/build
 
 chapter03/CMakeFiles/simple_kernel_params.dir/clean:
-	cd /home/hgj/Project/mycuda/cuda_by_example/build/chapter03 && $(CMAKE_COMMAND) -P CMakeFiles/simple_kernel_params.dir/cmake_clean.cmake
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03 && $(CMAKE_COMMAND) -P CMakeFiles/simple_kernel_params.dir/cmake_clean.cmake
 .PHONY : chapter03/CMakeFiles/simple_kernel_params.dir/clean
 
 chapter03/CMakeFiles/simple_kernel_params.dir/depend: chapter03/CMakeFiles/simple_kernel_params.dir/simple_kernel_params_generated_simple_kernel_params.cu.o
-	cd /home/hgj/Project/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hgj/Project/mycuda/cuda_by_example /home/hgj/Project/mycuda/cuda_by_example/chapter03 /home/hgj/Project/mycuda/cuda_by_example/build /home/hgj/Project/mycuda/cuda_by_example/build/chapter03 /home/hgj/Project/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hgj/Project/mypro/mycuda/cuda_by_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hgj/Project/mypro/mycuda/cuda_by_example /home/hgj/Project/mypro/mycuda/cuda_by_example/chapter03 /home/hgj/Project/mypro/mycuda/cuda_by_example/build /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03 /home/hgj/Project/mypro/mycuda/cuda_by_example/build/chapter03/CMakeFiles/simple_kernel_params.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : chapter03/CMakeFiles/simple_kernel_params.dir/depend
 
