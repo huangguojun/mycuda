@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/simple_kernel.dir/simple_kernel_generated_simple_kernel.cu.o  -o ../bin/simple_kernel  -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -ldl -lrt -lpthread 

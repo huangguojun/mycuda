@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/dot_5.dir/dot_5_generated_dot.cu.o  -o ../bin/dot_5  -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -ldl -lrt -lpthread 

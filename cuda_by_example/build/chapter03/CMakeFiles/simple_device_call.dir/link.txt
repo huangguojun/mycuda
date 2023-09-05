@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/simple_device_call.dir/simple_device_call_generated_simple_device_call.cu.o  -o ../bin/simple_device_call  -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -ldl -lrt -lpthread 

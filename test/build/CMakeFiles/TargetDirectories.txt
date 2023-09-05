@@ -1,3 +1,0 @@
-/home/hgj/Project/mypro/mycuda/test/build/CMakeFiles/rebuild_cache.dir
-/home/hgj/Project/mypro/mycuda/test/build/CMakeFiles/diana.dir
-/home/hgj/Project/mypro/mycuda/test/build/CMakeFiles/edit_cache.dir

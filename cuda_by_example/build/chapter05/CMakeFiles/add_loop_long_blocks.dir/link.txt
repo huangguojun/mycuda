@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/add_loop_long_blocks.dir/add_loop_long_blocks_generated_add_loop_long_blocks.cu.o  -o ../bin/add_loop_long_blocks  -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -ldl -lrt -lpthread 

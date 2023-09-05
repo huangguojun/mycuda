@@ -18,5 +18,17 @@
 
 int main( void ) {
     printf( "Hello, World!\n" );
+    cudaDeviceProp prop;
+    int count;
+    HANDLE_ERROR( cudaGetDeviceCount( &count ) );
+    printf( "device count: %d\n", count );
+
+    // print the cuda device properties
+    
+    HANDLE_ERROR( cudaGetDeviceProperties( &prop, 0 ) );
+    printf( "kernel count: %d\n", prop.multiProcessorCount );
+
+
+
     return 0;
 }

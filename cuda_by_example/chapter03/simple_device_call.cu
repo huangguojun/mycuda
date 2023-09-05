@@ -31,8 +31,11 @@ int main( void ) {
 
     add<<<1,1>>>( 2, 7, dev_c );
 
-    cudaMemcpy( &c, dev_c, sizeof(int);
-    printf( "2 + 7 = %d\n", c );
+    // cudaMemcpy( &c, dev_c, sizeof(int) );
+    // printf( "2 + 7 = %d\n", c );
+
+    // printf cuda information
+
 
     cudaFree( dev_c ) ;
 
